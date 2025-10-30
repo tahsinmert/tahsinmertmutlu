@@ -1139,7 +1139,9 @@ const UltraCV = ({
                     className="flex flex-col sm:flex-row gap-4"
                   >
                     <a
-                      href="#contact"
+                      href="/cv.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="glass px-12 py-5 text-lg font-bold hover:scale-105 transition-transform text-center"
                       style={{ 
                         background: 'var(--color-primary)',
@@ -1149,8 +1151,9 @@ const UltraCV = ({
                     >
                       DOWNLOAD CV →
                     </a>
-                    <button
-                      className="glass px-12 py-5 text-lg font-bold border-2 hover:scale-105 transition-transform"
+                    <a
+                      href="#contact"
+                      className="glass px-12 py-5 text-lg font-bold border-2 hover:scale-105 transition-transform text-center"
                       style={{ 
                         borderColor: 'var(--color-primary)',
                         color: 'var(--color-primary)',
@@ -1159,7 +1162,7 @@ const UltraCV = ({
                       }}
                     >
                       CONTACT ME
-                    </button>
+                    </a>
                   </motion.div>
                 </motion.div>
               </motion.div>

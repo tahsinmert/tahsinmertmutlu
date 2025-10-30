@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahsin Mert Mutlu - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: #333;
+            background: #ffffff;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        
+        /* Header */
+        header {
+            border-bottom: 3px solid #ff1744;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 28pt;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #000;
+        }
+        
+        .title {
+            font-size: 15pt;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-size: 10pt;
+            margin-top: 10px;
+        }
+        
+        .contact-info > div {
+            margin: 5px 10px 5px 0;
+        }
+        
+        .social-links {
+            margin-top: 10px;
+            font-size: 10pt;
+            color: #0066cc;
+        }
+        
+        .social-links a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #0066cc;
+        }
+        
+        /* Sections */
+        .section {
+            margin: 25px 0;
+            page-break-inside: avoid;
+        }
+        
+        h2 {
+            font-size: 16pt;
+            font-weight: bold;
+            color: #000;
+            border-bottom: 2px solid #ff1744;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        
+        /* Summary */
+        .summary {
+            font-size: 11pt;
+            line-height: 1.8;
+            color: #444;
+            text-align: justify;
+        }
+        
+        /* Experience & Education */
+        .item {
+            margin-bottom: 20px;
+            page-break-inside: avoid;
+        }
+        
+        .item-title {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        
+        .item-company {
+            font-size: 11pt;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .item-duration {
+            font-size: 10pt;
+            color: #888;
+            margin-bottom: 8px;
+        }
+        
+        .item-description {
+            font-size: 10pt;
+            color: #555;
+            margin-left: 15px;
+        }
+        
+        .item-description ul {
+            margin-left: 15px;
+        }
+        
+        .item-description li {
+            margin-bottom: 4px;
+        }
+        
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 10px;
+        }
+        
+        .skill-category {
+            font-size: 9pt;
+            color: #888;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        
+        .skill-name {
+            font-size: 10pt;
+            color: #333;
+            margin-bottom: 3px;
+        }
+        
+        /* Certifications */
+        .cert-item {
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+        
+        .cert-title {
+            font-size: 11pt;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        
+        .cert-platform {
+            font-size: 10pt;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .cert-skills {
+            font-size: 9pt;
+            color: #555;
+        }
+        
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+            
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>TAHSIN MERT MUTLU</h1>
+            <div class="title">UI/UX Designer & Web Developer</div>
+            
+            <div class="contact-info">
+                <div>📧 tahsinmert.mutlu@std.yeditepe.edu.tr</div>
+                <div>📱 +90 545 897 6442</div>
+                <div>📍 Istanbul, Turkey</div>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/tahsinmertmutlu" target="_blank">LinkedIn</a>
+                <a href="https://github.com/tahsinmert" target="_blank">GitHub</a>
+                <a href="https://tahsinmertmutlu.netlify.app" target="_blank">Portfolio</a>
+                <a href="https://www.instagram.com/tahsin_mert_official/" target="_blank">Instagram</a>
+            </div>
+        </header>
+        
+        <!-- Professional Summary -->
+        <section class="section">
+            <h2>PROFESSIONAL SUMMARY</h2>
+            <p class="summary">
+                Experienced UI/UX Designer & Web Developer with 4+ years of expertise in creating user-centered interfaces 
+                and developing modern, fast, and responsive websites. Specialized in React.js, Vue.js, and modern web technologies. 
+                Proven track record of delivering clean, aesthetic, and functional digital experiences. Strong foundation in 
+                frontend development, UI/UX design, and full-stack integration. Passionate about combining technology with 
+                business solutions and committed to continuous learning and innovation.
+            </p>
+        </section>
+        
+        <!-- Technical Skills -->
+        <section class="section">
+            <h2>TECHNICAL SKILLS</h2>
+            <div class="skills-grid">
+                <div>
+                    <div class="skill-category">Frontend</div>
+                    <div class="skill-name">HTML (100%)</div>
+                    <div class="skill-name">CSS (90%)</div>
+                    <div class="skill-name">React.js (80%)</div>
+                    <div class="skill-name">Vue.js (75%)</div>
+                    <div class="skill-name">JavaScript (75%)</div>
+                </div>
+                <div>
+                    <div class="skill-category">Backend & CMS</div>
+                    <div class="skill-name">PHP (80%)</div>
+                    <div class="skill-name">WordPress / CMS (90%)</div>
+                    <div class="skill-name">RESTful APIs</div>
+                    <div class="skill-name">Node.js</div>
+                </div>
+                <div>
+                    <div class="skill-category">Design Tools</div>
+                    <div class="skill-name">Figma (80%)</div>
+                    <div class="skill-name">Canva (80%)</div>
+                    <div class="skill-name">Photoshop (55%)</div>
+                </div>
+                <div>
+                    <div class="skill-category">Other Technologies</div>
+                    <div class="skill-name">TypeScript</div>
+                    <div class="skill-name">SASS / SCSS</div>
+                    <div class="skill-name">Redux / Context API</div>
+                    <div class="skill-name">Jest / Cypress</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Professional Experience -->
+        <section class="section">
+            <h2>PROFESSIONAL EXPERIENCE</h2>
+            
+            <div class="item">
+                <div class="item-title">Senior Frontend Developer</div>
+                <div class="item-company">TechSolutions • Istanbul, Turkey</div>
+                <div class="item-duration">2023 - Present</div>
+                <div class="item-description">
+                    <ul>
+                        <li>Developed corporate web applications and e-commerce platforms using React.js and Next.js</li>
+                        <li>Led a team of 7 frontend engineers, managed project distribution and code review processes</li>
+                        <li>Created scalable and secure codebases with TypeScript for enhanced performance</li>
+                        <li>Managed Agile (Scrum) methodology with 2-week sprints for new feature integration</li>
+                        <li>Collaborated with UI/UX teams to convert Figma designs into responsive, user-friendly interfaces</li>
+                        <li>Enhanced application stability through test automation (Jest, Cypress)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">Frontend Developer</div>
+                <div class="item-company">WebCraft • Istanbul, Turkey</div>
+                <div class="item-duration">2024 - Present</div>
+                <div class="item-description">
+                    <ul>
+                        <li>Built dynamic and modern websites using JavaScript (ES6+), HTML5, CSS3/SASS</li>
+                        <li>Developed admin panels and user management systems with Vue.js</li>
+                        <li>Integrated RESTful APIs and managed state with Redux and Context API in React.js projects</li>
+                        <li>Managed 5+ projects simultaneously, delivering custom solutions tailored to client needs</li>
+                        <li>Ensured cross-browser and mobile compatibility for seamless user experience</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Education -->
+        <section class="section">
+            <h2>EDUCATION</h2>
+            
+            <div class="item">
+                <div class="item-title">Information Systems and Technologies</div>
+                <div class="item-company">Yeditepe University • Istanbul, Turkey</div>
+                <div class="item-duration">2023 - 2027 (Ongoing)</div>
+                <div class="item-description">
+                    Comprehensive coursework in digital system management, software development, data analytics, 
+                    and information security. Combining technology with business processes for solution-oriented projects.
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">High School Diploma</div>
+                <div class="item-company">Doğa College • Çanakkale, Turkey</div>
+                <div class="item-duration">2019 - 2023</div>
+                <div class="item-description">
+                    STEM-focused education with strong foundation in technology and software development. 
+                    Enhanced teamwork, problem-solving, and project development skills through extracurricular activities.
+                </div>
+            </div>
+        </section>
+        
+        <!-- Certifications -->
+        <section class="section">
+            <h2>PROFESSIONAL CERTIFICATIONS</h2>
+            
+            <div class="cert-item">
+                <div class="cert-title">Modern JavaScript (ES6+)</div>
+                <div class="cert-platform">Udacity • 3 Months</div>
+                <div class="cert-skills">ES6+ syntax, async/await, Promises, DOM manipulation, Fetch API, modular JavaScript</div>
+            </div>
+            
+            <div class="cert-item">
+                <div class="cert-title">React.js Frontend Development</div>
+                <div class="cert-platform">Coursera (Meta) • 4 Months</div>
+                <div class="cert-skills">React Hooks, Context API, Redux, SPA development, Jest testing</div>
+            </div>
+            
+            <div class="cert-item">
+                <div class="cert-title">Responsive Web Design</div>
+                <div class="cert-platform">freeCodeCamp • 300 Hours</div>
+                <div class="cert-skills">HTML5, CSS3, Flexbox, Grid, media queries, accessibility standards</div>
+            </div>
+            
+            <div class="cert-item">
+                <div class="cert-title">TypeScript Mastery</div>
+                <div class="cert-platform">Frontend Masters • 6 Weeks</div>
+                <div class="cert-skills">Static typing, interfaces, generics, Angular/React integration</div>
+            </div>
+            
+            <div class="cert-item">
+                <div class="cert-title">Web Performance Optimization</div>
+                <div class="cert-platform">Google Developers • 2 Months</div>
+                <div class="cert-skills">Lighthouse audits, lazy loading, critical rendering path, performance optimization</div>
+            </div>
+            
+            <div class="cert-item">
+                <div class="cert-title">Vue.js & Nuxt.js</div>
+                <div class="cert-platform">Udemy • 30 Hours</div>
+                <div class="cert-skills">Vuex, state management, server-side rendering, Nuxt.js, Vue.js best practices</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
