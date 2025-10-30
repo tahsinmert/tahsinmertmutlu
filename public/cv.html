@@ -30,6 +30,26 @@
             border-bottom: 3px solid #ff1744;
             padding-bottom: 20px;
             margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 30px;
+        }
+        
+        .header-text {
+            flex: 1;
+        }
+        
+        .profile-photo {
+            width: 150px;
+            height: 180px;
+            object-fit: cover;
+            border: 3px solid #ff1744;
+            border-radius: 4px;
         }
         
         h1 {
@@ -189,9 +209,36 @@
                 page-break-inside: avoid;
             }
             
+            .header-content {
+                page-break-inside: avoid;
+            }
+            
+            .profile-photo {
+                width: 120px;
+                height: 150px;
+            }
+            
             a {
                 color: #000;
                 text-decoration: none;
+            }
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .profile-photo {
+                margin-top: 20px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
             }
         }
     </style>
@@ -200,20 +247,26 @@
     <div class="container">
         <!-- Header -->
         <header>
-            <h1>TAHSIN MERT MUTLU</h1>
-            <div class="title">UI/UX Designer & Web Developer</div>
-            
-            <div class="contact-info">
-                <div>📧 tahsinmert.mutlu@std.yeditepe.edu.tr</div>
-                <div>📱 +90 545 897 6442</div>
-                <div>📍 Istanbul, Turkey</div>
-            </div>
-            
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/tahsinmertmutlu" target="_blank">LinkedIn</a>
-                <a href="https://github.com/tahsinmert" target="_blank">GitHub</a>
-                <a href="https://tahsinmertmutlu.netlify.app" target="_blank">Portfolio</a>
-                <a href="https://www.instagram.com/tahsin_mert_official/" target="_blank">Instagram</a>
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>TAHSIN MERT MUTLU</h1>
+                    <div class="title">UI/UX Designer & Web Developer</div>
+                    
+                    <div class="contact-info">
+                        <div>📧 tahsinmert.mutlu@std.yeditepe.edu.tr</div>
+                        <div>📱 +90 545 897 6442</div>
+                        <div>📍 Istanbul, Turkey</div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/tahsinmertmutlu" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/tahsinmert" target="_blank">GitHub</a>
+                        <a href="https://tahsinmertmutlu.netlify.app" target="_blank">Portfolio</a>
+                        <a href="https://www.instagram.com/tahsin_mert_official/" target="_blank">Instagram</a>
+                    </div>
+                </div>
+                
+                <img src="/image.png" alt="Tahsin Mert Mutlu" class="profile-photo">
             </div>
         </header>
         
