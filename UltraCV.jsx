@@ -1009,7 +1009,7 @@ const UltraCV = ({
           <div 
             className="absolute inset-0 opacity-15"
             style={{
-              backgroundImage: 'url(/src/tahsin-mert-lake-photo.jpg)',
+              backgroundImage: 'url(/tahsin-mert-lake-photo.jpg)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
@@ -1033,7 +1033,7 @@ const UltraCV = ({
               >
                 <div className="relative magazine-image-overlay">
                   <motion.img
-                    src="/src/tahsinmert.jpeg"
+                    src="/tahsinmert.jpeg"
                     alt={name}
                     className="w-full max-w-md object-cover"
                     style={{ 
